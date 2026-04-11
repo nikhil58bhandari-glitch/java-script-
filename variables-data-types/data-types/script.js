@@ -40,7 +40,7 @@ const numm = n;
 console.log(numm, typeof numm);
 
 // Reference Types
-const numbers = [1,2,3,4,5];
+
 const pesron = {
     name: 'nikhil',
 };
@@ -50,6 +50,8 @@ const pesron = {
 
  const say = sayHello;
  console.log(say, typeof say);
+
+ const numbers = [1,2,3,4,5];
 
 const arr = numbers;
 console.log(arr, typeof arr);
