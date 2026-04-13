@@ -46,4 +46,18 @@ x = s.valueOf();
 x = s.split(' ');
 x = s.split('');
 
-console.log(x);
+// console.log(x);
+  
+// Change the d into upper case -
+const myString = 'devloper';
+
+let myNewString;
+// solution 1-
+myNewString = myString.charAt(0).toUpperCase() + myString.substring(1);
+// solution 2-
+myNewString = myString[0].toUpperCase() + myString.substring(1);
+// solution 3- 
+myNewString = `${myString[0].toUpperCase()}${myString.substring(1)}`;
+
+console.log(myNewString);
+
