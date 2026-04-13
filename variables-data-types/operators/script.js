@@ -40,5 +40,10 @@ x = 2 === '2';
 x = 2 != 2;
 x = 2 !== 2;
 
+x = 10 > 5;   // Greater
+x = 10 >= 5; // Greater than or equal to
+x = 10 < 5;  // less 
+x = 10 <= 5; // less than or equal to
+
 
 console.log(x);
