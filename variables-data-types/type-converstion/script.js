@@ -18,6 +18,7 @@ amount = parseInt(amount);
 // Convert number to boolean
 // amount = Boolean(amount); // it give every time 'true' but putting 0 it give 'false' 
 
+// NaN
 console.log(Math.sqrt(-1));
 console.log(1 + NaN);
 console.log(undefined + undefined);
