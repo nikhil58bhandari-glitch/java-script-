@@ -27,7 +27,7 @@ console.log(x);
 
 
  // MATH-OBJECTS
-
+/*
  let x;
 
  x = Math.sqrt(9);
@@ -55,3 +55,27 @@ y = Math.floor(Math.random() * 100 + 1);
 console.log(Math);
 console.log(x);
 console.log(y);
+*/
+
+// Number Challenge
+
+const x = Math.floor(Math.random() * 100 + 1);
+const y = Math.floor(Math.random() * 50 + 1);
+
+const sum = x + y ;
+const sumOutput = `${x} + ${y} = ${sum}`;
+
+const diff = x - y;
+const diffOutput = `${x} - ${y} = ${diff}`;
+
+const multi = x * y;
+const multiOutput = `${x} * ${y} = ${multi}`;
+
+const div = x / y;
+const divOutput = `${x} / ${y} = ${div}`;
+
+console.log(x, y);
+console.log(sumOutput);
+console.log(diffOutput);
+console.log(multiOutput);
+console.log(divOutput);
