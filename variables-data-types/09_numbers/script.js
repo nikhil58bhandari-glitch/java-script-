@@ -74,8 +74,12 @@ const multiOutput = `${x} * ${y} = ${multi}`;
 const div = x / y;
 const divOutput = `${x} / ${y} = ${div}`;
 
+const rem = x / y;
+const remOutput = `${x} % ${y} = ${div}`;
+
 console.log(x, y);
 console.log(sumOutput);
 console.log(diffOutput);
 console.log(multiOutput);
 console.log(divOutput);
+console.log(remOutput);
