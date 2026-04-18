@@ -29,7 +29,7 @@ console.log(x);
 */
 
 //     Nesting, Concat & Spread
-
+/*
 let x;
 
 const fruits = ['apple', 'pear', 'banana', 'orange'];
@@ -71,3 +71,40 @@ const c = 3;
 x = Array.of(a,b,c);
 
 console.log(x);
+
+*/
+
+//  Q1-:arr[1,2,3,4,5]
+// result = [6,5,4,3,2,1,0]
+
+const arr = [1, 2, 3, 4, 5];
+
+arr.reverse();
+console.log(arr);
+
+arr.push(0);
+console.log(arr);
+
+arr.unshift(6);
+
+console.log(arr);
+
+// Q2-:[1, 2, 3, 4, 5];
+        //arr2 = [5, 6, 7, 8, 9, 10];
+RESULT  = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+
+const arr1 = [1, 2, 3, 4, 5];
+const arr2 = [5, 6, 7, 8, 9, 10];
+
+// solution 1
+const arr3 = arr1.slice(0, 4).concat(arr2);
+console.log(arr3);
+
+
+// solution 2
+const arr4 = [...arr1, ...arr2];
+arr4.splice(4, 1);
+
+
+console.log(arr4);
