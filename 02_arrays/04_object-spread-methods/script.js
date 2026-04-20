@@ -1,3 +1,4 @@
+/*
 let x;
 
 const todo = new Object();
@@ -50,3 +51,84 @@ x = Object.entries(todo);
 x = todo.hasOwnProperty('age');
 
 console.log(x);
+
+*/
+
+/*
+//     Destructuring & Naming
+
+const firstName = 'nikhil';
+const lastName = 'bhandari';
+const age = 22;
+
+const  person = {
+ firstName,
+  lastName,
+  age,
+};
+
+console.log(person.age);
+
+// Destructuring
+
+const todo = {
+    id: 1,
+    title: 'take out trash',
+    user: {
+        name : 'nikhil',
+    }
+};
+
+const{
+    id: todoId,
+    title,
+    user: { name },
+} = todo;
+
+// const id = todo.id;
+
+// const{id , title, user } = todo;
+
+// console.log(id, title, user);
+
+console.log(todoId);
+
+// Destucture Arrays
+
+const numbers = [23,65,44,24];
+
+const [first,second, ...rest] =   numbers;
+
+console.log(first,second, rest);
+*/
+
+ //       JSON Intro
+
+ const post = {
+    id: 1,
+    title: 'post One',
+    body: 'This is the body',
+ };
+
+ // Convert to JSON string
+ const str = JSON .stringify(post);
+
+ // Parse JSON
+ const obj = JSON.parse(str);
+
+ const posts = [
+    {
+        id: 1,
+        title: 'Post One',
+        body: 'this is the body',
+    },
+    {
+        id: 2,
+        title: 'Post two',
+        body: 'this is the body',
+    },
+ ];
+
+ const str2 = JSON.stringify(posts);
+
+ console.log(str2);
