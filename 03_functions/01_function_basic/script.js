@@ -19,4 +19,5 @@ console.log('After the return');
 }
 
 const result = subtract(34, 22);
+
 console.log(result,subtract(24,5));
