@@ -1,5 +1,5 @@
 // Object Literals-: A Common data structure that holds key/values pairs-
-
+/*
 let x;
 
 const person = {
@@ -43,3 +43,55 @@ x = person.name;
   // x = person;
 
 console.log(x);
+*/
+
+// Q1-: 
+
+// Step 1-
+const library = [
+    {
+        title: 'The Metamorphosis',
+        author: 'Kafka',
+        status: {
+            own: true,
+            reading: false,
+            read: false
+        }
+    },
+    {
+        title: 'Crime and Punishment',
+        author: 'Fyodor Dostoecsky',
+        status: {
+            own: true,
+            reading: false,
+            read: false
+        }
+    },
+    {
+        title: 'White Night',
+        author: 'Fyodor Dostoecsk',
+        status: {
+            own: true,
+            reading: false,
+            read: false
+        }
+    }
+];
+
+// Step 2-
+library[0].status.read = true;
+library[1].status.read = true;
+library[2].status.read = true;
+
+// console.log(library);
+
+// Step 3 -
+
+const{  title:firstbook } = library[0];
+
+ console.log(firstbook);
+
+// Step 4-
+const libraryJSON = JSON.stringify(library);
+
+console.log(libraryJSON);

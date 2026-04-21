@@ -114,6 +114,7 @@ console.log(first,second, rest);
  const str = JSON .stringify(post);
 
  // Parse JSON
+ 
  const obj = JSON.parse(str);
 
  const posts = [
