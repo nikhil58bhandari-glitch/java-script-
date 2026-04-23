@@ -65,6 +65,7 @@ run();
 //console.log(d);
 */
 
+/*
 //      Nested Scope  
 
 function first() {
@@ -89,3 +90,6 @@ if(true){
     }
    // console.log(y); // will give error
 }
+*/
+
+
