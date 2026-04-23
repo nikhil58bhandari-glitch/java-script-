@@ -29,7 +29,7 @@ add();
 */
 
 //       Block Scope
-
+/*
 const x = 100;
 const foo = 1;
 var bar = 2;
@@ -63,3 +63,26 @@ function run(){
 run();
 
 //console.log(d);
+*/
+
+//      Nested Scope  
+
+function first() {
+    const x = 100;
+
+    function second(){
+        const y = 200;
+        console.log(x+y);
+    }
+    second();
+}
+first();
+
+if(true){
+    const x = 100;
+    
+    if(x === 100){
+        const y = 200;
+        console.log(x + y);
+    }
+}
