@@ -74,6 +74,8 @@ function first() {
         const y = 200;
         console.log(x+y);
     }
+
+    // console.log(y);   // willgive error
     second();
 }
 first();
@@ -85,4 +87,5 @@ if(true){
         const y = 200;
         console.log(x + y);
     }
+   // console.log(y); // will give error
 }
