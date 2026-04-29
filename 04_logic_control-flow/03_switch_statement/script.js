@@ -1,5 +1,6 @@
-const d = new Date(2026, 1, 10, 8, 0, 0);
+const d = new Date(2026, 1, 10, 13, 0, 0);
 const month = d.getMonth();
+const hour = d.getHours();
 
 switch (month){
     case 1:
@@ -46,8 +47,18 @@ switch (month){
             console.log('it is november');
             break;
 
-            case 12:
+            default:
             console.log('it is December');
-            break;
 
+}
+
+switch (true) {
+    case hour < 12:
+        console.log('good Morning');
+        break;
+        case hour < 18:
+            console.log('good afternoon');
+            break;
+            default:
+                console.log('good Night');
 }
