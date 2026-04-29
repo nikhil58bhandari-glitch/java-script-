@@ -25,3 +25,9 @@ if(x !== y){
 }
 
 console.log(z);
+
+
+// Shorthand if
+if(x >= y) console.log(`${x} is greater than or equal to ${y}`),
+console.log('this is true');
+else console.lg('this is false');
