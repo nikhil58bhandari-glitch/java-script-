@@ -35,3 +35,43 @@ c = undefined ?? 30;
 c = 0 ?? 30;
 c = '' ?? 30;
 console.log(c);
+
+//   -- Logical Assignment --
+
+// ||= assigns the rigth side value only if the left is falsy value.
+
+let n = false;
+// if(!n){
+//     n = 10;
+// }
+
+ // n = n || 10;
+
+ n ||= 10;
+console.log(n);
+
+// &&= assigns the rigth side value only if the left is a truthy value.
+
+let m = 20;
+if(m){
+    m = 20;
+}
+
+m = m && 20;
+
+m  &&= 20;
+console.log(m);
+
+// ??= assigns the rigth side value only if the left is null or undefined.
+
+let p = null;
+
+if(p === null || p === undefined ){
+    p = 20;
+}
+
+p = p ?? 20;
+
+p ??= 20;
+
+console.log(p);
